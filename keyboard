@@ -1,0 +1,2 @@
+yay -S workman-git
+localectl set-keymap workman
