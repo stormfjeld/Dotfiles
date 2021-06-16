@@ -1,4 +1,5 @@
-yay -S workman-gi
+yay -S workman-git
+
 git clone https://github.com/workman-layout/Workman.git
 cd Workman
 cd xorg
@@ -7,3 +8,5 @@ cd ..
 cd linux_console/
 sudo mkdir /usr/share/kbd/keymaps/i386/workman
 sudo cp workman.iso15.kmap /usr/share/kbd/keymaps/i386/workman/workman.map
+setxkbmap workman
+localectl set-keymap workman
