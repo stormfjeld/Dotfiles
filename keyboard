@@ -1,2 +1,9 @@
-yay -S workman-git
-localectl set-keymap workman
+yay -S workman-gi
+git clone https://github.com/workman-layout/Workman.git
+cd Workman
+cd xorg
+sudo cp workman /usr/share/X11/xkb/symbols/workman
+cd ..
+cd linux_console/
+sudo mkdir /usr/share/kbd/keymaps/i386/workman
+sudo cp workman.iso15.kmap /usr/share/kbd/keymaps/i386/workman/workman.map
