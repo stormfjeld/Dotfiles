@@ -1,0 +1,7 @@
+tint2 &
+picom &
+nitrogen --restore &
+emacs --daemon &
+quicktile --daemonize &
+emacs --fullscreen &
+lxsession &
