@@ -118,7 +118,7 @@ myTerminal :: String
 myTerminal = "alacritty"    -- Sets default terminal
 
 myBrowser :: String
-myBrowser = "qutebrowser "  -- Sets qutebrowser as browser
+myBrowser = "qutebrowser"  -- Sets qutebrowser as browser
 
 myEmacs :: String
 myEmacs = "emacsclient -c -a 'emacs' "  -- Makes emacs keybindings easier to type
@@ -425,7 +425,7 @@ I am using the Xmonad.Util.EZConfig module which allows keybindings to be writte
 | A FEW KEYBINDINGS       | ASSOCIATED ACTION                                            |
 |-------------------------+--------------------------------------------------------------|
 | MODKEY + RETURN         | opens terminal (alacritty)                                   |
-| MODKEY + SHIFT + RETURN | opens run launcher (dmenu)                                   |
+| MODKEY + SHIFT + RETURN | opens run launcher ()                                        |
 | MODKEY + TAB            | rotates through the available layouts                        |
 | MODKEY + SPACE          | toggles fullscreen on/off (useful for watching videos)       |
 | MODKEY + SHIFT + c      | closes window with focus                                     |
@@ -446,6 +446,7 @@ I am using the Xmonad.Util.EZConfig module which allows keybindings to be writte
 | MODKEY + comma          | switch focus to prev monitor                                 |
 | MODKEY + SPACE          | toggles fullscreen on/off (useful for watching videos)       |
 | MODKEY + t              | force floating window back into tiling                       |
+| ALT + SPACE             | opens rofi                                                   |
 
 #+BEGIN_SRC haskell
 myKeys :: [(String, X ())]
@@ -457,6 +458,8 @@ myKeys =
 
     -- Run Prompt
         , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
+    --    , ("M-S-<Return>", spawn "rofi -show drun -show icons") -- Rofi
+        , ("M1-<Space>", spawn "rofi -show drun -show icons") -- Rofi
 
     -- Other Dmenu Prompts
     -- In Xmonad and many tiling window managers, M-p is the default keybinding to
