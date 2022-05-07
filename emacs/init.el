@@ -10,10 +10,6 @@
 
 (set-face-attribute 'default nil :font "Fira Code" :height 120)
 
-;; All-the-icons
-;; M-x all-the-icons-install-fonts
-(use-package all-the-icons)
-
 ;; package-management
 (require 'package)
 
@@ -31,6 +27,10 @@
 
 (require 'use-package)
 (setq use-package-always-ensure t)
+
+;; All-the-icons
+;; M-x all-the-icons-install-fonts
+(use-package all-the-icons)
 
 (column-number-mode)
 (global-display-line-numbers-mode t)
