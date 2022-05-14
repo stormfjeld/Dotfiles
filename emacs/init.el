@@ -10,10 +10,6 @@
 
 (set-face-attribute 'default nil :font "Fira Code" :height 120)
 
-;; All-the-icons
-;; M-x all-the-icons-install-fonts
-(use-package all-the-icons)
-
 ;; package-management
 (require 'package)
 
@@ -89,6 +85,10 @@
 
 ;; Org Roam
 (use-package org-roam)
+
+;; All-the-icons
+;; M-x all-the-icons-install-fonts
+(use-package all-the-icons)
 
 ;; Doom modeline
 (use-package doom-modeline
