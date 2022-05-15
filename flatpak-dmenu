@@ -1,0 +1,7 @@
+Recipe:
+
+#!/bin/sh
+
+flatpak_run_cmd
+
+# Add to /usr/bin folder
