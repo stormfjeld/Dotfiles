@@ -8,7 +8,7 @@
 
 (menu-bar-mode -1)
 
-(set-face-attribute 'default nil :font "Fira Code" :height 120)
+(set-face-attribute 'default nil :font "Fira Code" :height 140)
 
 ;; package-management
 (require 'package)
@@ -31,7 +31,6 @@
 (use-package elcord)
 (elcord-mode)
 
-;; All-the-icons
 ;; M-x all-the-icons-install-fonts
 (use-package all-the-icons)
 
@@ -81,7 +80,7 @@
 (storm/leader-keys
  "t" '(:ignore t :which-key "toggles")))
 
-;; Evil mode 
+;; Evil mode
 (use-package evil
   :init
   (setq evil-want-integration t)
