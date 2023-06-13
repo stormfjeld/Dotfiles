@@ -1,6 +1,4 @@
 #+TITLE: Storm's Dotfiles
 #+AUTHOR: Storm
-
-* My Dotfiles
 ** What is in here?
-*** My dotfiles, ofcourse :-)
+**** My dotfiles, ofcourse :-)
